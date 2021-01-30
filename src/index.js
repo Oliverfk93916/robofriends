@@ -9,6 +9,7 @@ import 'tachyons'
 import App from './containers/App'
 import reportWebVitals from './reportWebVitals';
 import {searchRobots, requestRobots } from './reducers'
+import registerServiceWorker from './serviceWorker'
 
 const logger = createLogger()
 
@@ -22,3 +23,4 @@ ReactDOM.render(<Provider store={store}>
 				document.getElementById('root'));
 
 reportWebVitals();
+registerServiceWorker()
