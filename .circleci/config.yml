@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run: echo "running tests"
       - run: npm install
-      - run: npm test
+      - run: npm run test
   hithere:
     docker:
       - image: circleci/node:latest
@@ -23,7 +23,7 @@ jobs:
       - checkout 
       - run: echo "Helloooo"
 workflows:
-  version: 2.1
+  version: 2
   build_test_lint:
     jobs:
       - build
