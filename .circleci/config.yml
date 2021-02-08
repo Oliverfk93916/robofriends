@@ -12,8 +12,9 @@ jobs:
     steps:
       - checkout
       - run: echo "Second build"
-  workflows:
-    build1_build2:
-      jobs:
-        - build1
-        - build2
+workflows:
+  version: 2.1
+  build1_build2:
+    jobs:
+      - build1
+      - build2
